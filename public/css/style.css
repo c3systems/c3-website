@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+html {
+  height: 100%;
+}
+body {
+  background: white;
+  height: 100%;
+  width: 100%;
+}
+.container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  max-width: 400px;
+  padding: 40px;
+  flex-direction: column;
+}
+.logo {
+  width: 100%;
+}
+.text {
+  width: 100%;
+}
