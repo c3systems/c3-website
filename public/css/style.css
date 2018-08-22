@@ -92,6 +92,7 @@ input[type="submit"] {
   color: #fff;
   padding: 0.4em 1.2em;
   border-radius: 4px;
+  -webkit-appearance: none;
 }
 .button:hover,
 input[type="submit"]:hover {
