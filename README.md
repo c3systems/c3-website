@@ -4,4 +4,4 @@
 
 ## License
 
-Images and content is copyright C3 Labs. Everything else is MIT licensed.
+Images and content are copyright C3 Labs. Everything else is MIT licensed.
