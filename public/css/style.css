@@ -38,6 +38,30 @@
   animation-fill-mode: both;
 }
 
+@keyframes hovering {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(0, 0.3em);
+  }
+
+  75% {
+    transform: translate(0, -0.3em);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.hovering {
+  animation: hovering 5s linear infinite;
+  animation-delay: 1s;
+}
+
 html {
   height: 100%;
 }
@@ -279,6 +303,7 @@ input[type="submit"]:hover {
 }
 .footer .inner-container {
   justify-content: space-between;
+  align-items: flex-start;
   padding: 2em;
 }
 .footer .copyright {
