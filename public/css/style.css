@@ -6,6 +6,18 @@
   -webkit-font-smoothing: antialiased;
 }
 
+@keyframes fadeBg {
+  from {
+    background: #fff;
+  }
+
+  to {
+    background: #203538;
+  }
+}
+.fadeBg {
+  animation-name: fadeBg;
+}
 
 @keyframes fadeInUp {
   from {
@@ -67,12 +79,12 @@ html {
 }
 body {
   background: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 14px;
   color: #222;
 }
+/* global font */
+body,
 input {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Myriad Pro", "Myriad", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 14px;
 }
 strong {
@@ -104,8 +116,41 @@ a:hover {
   }
 }
 
+.header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+}
+.header .social {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+}
+.header .social a {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  color: #5e696b;
+}
+.header .social a:hover {
+  color: #3f4748;
+}
+@media (max-width: 640px) {
+  .header {
+    overflow-x: auto;
+    display: block;
+    padding: 1em;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .header .social {
+    display: block;
+  }
+}
+
 .hero {
-  background: #fff;
   width: 100%;
   display: flex;
   align-items: center;
@@ -192,7 +237,8 @@ input[type="submit"]:hover {
 
 
 .intro {
-  padding: 4em 2em;
+  padding: 6em 2em;
+  background: #fff;
 }
 .intro .content {
   font-size: 0.8em;
@@ -206,7 +252,8 @@ input[type="submit"]:hover {
 }
 
 .whitepaper {
-  padding: 2em 2em 4em 2em;
+  padding: 6em 2em;
+  background: #f4f4f4 url(../images/cubes.png) repeat 0 0;
 }
 .whitepaper .content {
   font-size: 0.8em;
@@ -218,9 +265,15 @@ input[type="submit"]:hover {
 .whitepaper p {
   margin-bottom: 1em;
 }
+@media (max-width: 640px) {
+  .whitepaper .content {
+    text-align: left;
+  }
+}
 
 .team {
-  padding: 2em 2em 4em 2em;
+  padding: 6em 2em;
+  background: #fff;
 }
 .team .content {
   font-size: 0.8em;
@@ -298,7 +351,7 @@ input[type="submit"]:hover {
   justify-content: flex-start;
   align-items: center;
   min-height: 100px;
-  background: #203538;
+  background: #122e30;
   color: #c5c5c5;
 }
 .footer .inner-container {
@@ -360,6 +413,11 @@ input[type="submit"]:hover {
   text-align: right;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 640px) {
+  :root:root #mc_embed_signup form {
+    text-align: left;
+  }
 }
 #mc_embed_signup_scroll {
   display: flex;
