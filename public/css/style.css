@@ -346,6 +346,9 @@ input[type="submit"]:hover {
   font-style: italic;
   margin-bottom: 1em;
 }
+.team .title strong {
+  font-weight: 600;
+}
 .team .image {
   border-radius: 50%;
   overflow: hidden;
