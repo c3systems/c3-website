@@ -256,19 +256,21 @@ a:hover {
   background: #4A90E2;
   z-index: 1;
   padding: 1em;
+  border: 1px dashed #7baeec;
+  border-bottom: none;
+  margin-bottom: 3em;
 }
 .hero:before {
   display: block;
   content: '';
-  background: url(/images/hero_grid.svg) no-repeat top center;
-  background-size: contain;
-  width: 100%;
-  max-width: 1000px;
+  background: url(/images/hero_blueprint.svg) no-repeat top center;
+  background-size: cover;
+  width: 1000px;
   transform: translate(-50%, 0);
   position: absolute;
   top: 0;
   left: 50%;
-  height: 700px;
+  height: 460px;
 }
 .hero .inner-container {
   flex-direction: column;
@@ -289,7 +291,7 @@ a:hover {
   margin-bottom: 1em;
 }
 .form-container {
-  margin-bottom: 4em;
+  margin-bottom: 1em;
   width: 100%;
   max-width: 300px;
 }
@@ -314,6 +316,9 @@ a:hover {
   animation-delay: 0.2s;
 }
 @media (max-width: 640px) {
+  .hero-box {
+    border: none;
+  }
   .hero {
     padding: 0 2em 4em 2em;
   }
@@ -501,9 +506,34 @@ input[type="submit"]:hover {
   text-align: center;
   margin-bottom: 3em;
   font-size: 1.3em;
+  position: relative;
 }
 .team .content {
 
+}
+.team .content:before {
+  display: block;
+  content: '';
+  background: url(/images/grid-white2.svg) no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  position: absolute;
+  top: -20px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+}
+.team .content:after {
+  display: block;
+  content: '';
+  background: url(/images/grid-white1.svg) no-repeat center center;
+  background-size: contain;
+  width: 100%;
+  position: absolute;
+  bottom: -20px;
+  right: -180px;
+  width: 200px;
+  height: 200px;
 }
 .team h3 {
   margin-bottom: 0.5em;
@@ -571,6 +601,9 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 640px) {
+  .team .content:before {
+    left: -100px;
+  }
   .team .social {
     font-size: 1.6em;
   }
@@ -581,6 +614,9 @@ input[type="submit"]:hover {
     margin-bottom: 3em;
   }
 }
+
+
+
 
 @media (max-width: 640px) {
   .box {
