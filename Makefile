@@ -12,3 +12,7 @@ serve/py:
 .PHONY: build
 build:
 	@hugo
+
+.PHONY: deploy
+deploy:
+	@. deploy.sh

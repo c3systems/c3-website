@@ -350,7 +350,8 @@ h3 {
 input[type="submit"] {
   display: inline-block;
   text-decoration: none;
-  -webkit-appearance: none;
+  -webkit-appearance: none; /* mobile safari */
+  border-radius: 0; /* mobile safari */
   background-color: #E9EAEB;
   color: #4A90E2;
   cursor: pointer;
@@ -570,6 +571,9 @@ input[type="submit"]:hover {
 }
 
 @media (max-width: 640px) {
+  .team .social {
+    font-size: 1.6em;
+  }
   .team .cards {
     flex-direction: column;
   }
@@ -867,7 +871,8 @@ input[type="submit"]:hover {
   cursor: pointer;
   font-size: 0.8em;
   padding: 0.6em 1em;
-  -webkit-appearance: none;
+  -webkit-appearance: none; /* mobile safari */
+  border-radius: 0; /* mobile safari */
 }
 #mc_embed_signup .button:hover {
 
