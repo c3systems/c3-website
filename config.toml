@@ -1,0 +1,4 @@
+baseURL = "https://c3labs.io/"
+languageCode = "en-us"
+title = "C3 Labs - The C3 Protocol"
+theme = "c3"
