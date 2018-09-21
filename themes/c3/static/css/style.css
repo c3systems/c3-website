@@ -182,12 +182,12 @@ a:hover {
   display: inline-block;
 }
 .header .logo-container .logo {
-  background: #4A90E2;
+  background: rgba(74, 144, 226, 0.85);
 }
 .header .nav {
   justify-content: center;
   display: flex;
-  background: #4A90E2;
+  background: rgba(74, 144, 226, 0.85);
   z-index: 1;
 }
 .header .nav a {
@@ -253,10 +253,9 @@ a:hover {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background: #4A90E2;
+  background: rgba(74, 144, 226, 0.85);
   z-index: 1;
   padding: 1em;
-  border: 1px dashed #7baeec;
   border-bottom: none;
   margin-bottom: 3em;
 }
@@ -296,7 +295,7 @@ a:hover {
   max-width: 300px;
 }
 .hero .programming-languages .more {
-
+  color: rgba(255, 255, 255, 0.43);
 }
 .hero .logos {
   max-width: 400px;
