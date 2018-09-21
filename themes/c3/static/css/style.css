@@ -200,6 +200,7 @@ a:hover {
   font-size: 0.8em;
   text-transform: uppercase;
   border: 2px solid transparent;
+  font-weight: bold;
 }
 .header .nav a:hover {
   color: #fff;
@@ -286,7 +287,7 @@ a:hover {
   margin-bottom: 1em;
 }
 .hero p {
-  font-size: 1em;
+  font-size: 1.2em;
   margin-bottom: 1em;
 }
 .form-container {
@@ -361,6 +362,7 @@ input[type="submit"] {
   cursor: pointer;
   padding: 0.6em 1em;
   border: 2px solid #fff;
+  font-weight: bold;
 }
 .button:focus,
 input:focus {
@@ -443,6 +445,7 @@ input[type="submit"]:hover {
   text-align: center;
   font-size: 2.2em;
   margin-bottom: 2em;
+  font-weight: bold;
   color: #4A90E2;
 }
 .features .items {
@@ -465,9 +468,10 @@ input[type="submit"]:hover {
 .features .item h3 {
   font-size: 1.6em;
   color: #4A90E2;
+  font-weight: bold;
 }
 .features .item p {
-  font-size: 0.7em;
+  font-size: 1em;
 }
 .features .image-container {
   display: flex;
@@ -500,12 +504,14 @@ input[type="submit"]:hover {
   color: #5E5E5E;
 }
 .team-intro {
-  max-width: 400px;
+  max-width: 450px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 3em;
-  font-size: 1.3em;
   position: relative;
+}
+.team-intro p {
+  font-size: 1em;
 }
 .team .content {
 
@@ -537,8 +543,9 @@ input[type="submit"]:hover {
 .team h3 {
   margin-bottom: 0.5em;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.2em;
   color: #4A90E2;
+  font-weight: bold;
 }
 .team p {
   margin-bottom: 1em;
@@ -556,7 +563,7 @@ input[type="submit"]:hover {
 .team h4 {
   text-align: center;
   display: block;
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: bold;
   margin-bottom: 0.2em;
 }
@@ -567,6 +574,7 @@ input[type="submit"]:hover {
   font-style: italic;
   margin-bottom: 1em;
   color: #4A90E2;
+  font-size: 1.1em;
 }
 .team .title strong {
   font-weight: 600;
@@ -588,13 +596,14 @@ input[type="submit"]:hover {
   width: 100px;
   align-items: center;
   margin: 0 auto 0.2em auto;
+  font-size: 1.3em;
 }
 .team .social a {
   padding: 0.1em 0.3em;
   color: #5e5e5e;
 }
 .team .info {
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 1.4;
   margin-bottom: 1.2em;
 }
@@ -635,12 +644,12 @@ input[type="submit"]:hover {
 .how .content {
   display: flex;
   justify-content: space-around;
-  max-width: 700px;
+  max-width: 800px;
   position: relative;
   margin: 0 auto;
 }
 .how .left {
-  width: 60%;
+  width: 50%;
   padding: 1em;
   position: relative;
 }
@@ -657,18 +666,20 @@ input[type="submit"]:hover {
   height: 300px;
 }
 .how .right {
-  width: 40%;
+  width: 50%;
   padding: 4em 1em 1em 1em;
   position: relative;
 }
 .how h3 {
-  font-size: 3em;
+  font-size: 2.2em;
+  font-weight: bold;
   position: absolute;
   top: 0;
   right: 0;
 }
 .how p {
   margin-bottom: 2em;
+  font-size: 1em;
 }
 @media (max-width: 640px) {
   .how .content {
@@ -833,7 +844,8 @@ input[type="submit"]:hover {
 }
 
 .signup h3 {
-  font-size: 2em;
+  font-size: 2.2em;
+  font-weight: bold;
   margin-bottom: 1em;
 }
 
@@ -866,7 +878,7 @@ input[type="submit"]:hover {
 
 :root:root #mc_embed_signup p {
   margin-bottom: 0.2em;
-  font-size: 0.8em;
+  font-size: 1em;
 }
 #mc_embed_signup_scroll {
   display: flex;
@@ -883,6 +895,7 @@ input[type="submit"]:hover {
   width: 100%;
   border: none;
   background: rgba(132, 178, 234, 0.5);
+  font-weight: bold;
 }
 #mc_embed_signup input.email::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: rgba(255, 255, 255, 0.65);
@@ -908,6 +921,7 @@ input[type="submit"]:hover {
   padding: 0.6em 1em;
   -webkit-appearance: none; /* mobile safari */
   border-radius: 0; /* mobile safari */
+  font-weight: bold;
 }
 #mc_embed_signup .button:hover {
 
