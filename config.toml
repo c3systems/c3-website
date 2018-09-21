@@ -2,3 +2,5 @@ baseURL = "https://c3labs.io/"
 languageCode = "en-us"
 title = "C3 Labs - The C3 Protocol"
 theme = "c3"
+[params]
+  description = "Create useful dApps in any software language. With C3 developers can create complex or robust products without having to learn Solidity or use confined systems like EVM or Web Assembly."
