@@ -178,6 +178,9 @@ a:hover {
 .header .logo-container {
   z-index: 1;
 }
+.header .logo-container a {
+  display: inline-block;
+}
 .header .logo-container .logo {
   background: #4A90E2;
 }
@@ -210,12 +213,26 @@ a:hover {
 }
 @media (max-width: 640px) {
   .header {
+    flex-direction: column;
+  }
+  .header .logo-container .logo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .header .nav {
     -webkit-overflow-scrolling: touch;
     overflow-x: auto;
     display: block;
     padding: 1em;
     white-space: nowrap;
     width: 100%;
+    z-index: 1;
+  }
+  .header .nav a {
+    min-width: auto;
+  }
+  .header .nav .signup-link {
+    min-width: auto;
   }
 }
 
@@ -297,6 +314,9 @@ a:hover {
   animation-delay: 0.2s;
 }
 @media (max-width: 640px) {
+  .hero {
+    padding: 0 2em 4em 2em;
+  }
   .logo-container {
     text-align: center;
   }
@@ -847,6 +867,7 @@ input[type="submit"]:hover {
   cursor: pointer;
   font-size: 0.8em;
   padding: 0.6em 1em;
+  -webkit-appearance: none;
 }
 #mc_embed_signup .button:hover {
 
