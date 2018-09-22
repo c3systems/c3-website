@@ -7,4 +7,31 @@
       </div>
     </div>
   </div>
+  <div id="map"></div>
 </section>
+<script src='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.0.1/mapbox.css' rel='stylesheet' />
+<script>
+  L.mapbox.accessToken = 'pk.eyJ1IjoibWlndWVsbW90YSIsImEiOiJjamR5N3UyYWYya3p0MzJtdXdienVjcGt2In0.R1C57aqrHzOAj6o_JgaIsA';
+  var geojson = [
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-118.47191212126609,33.98464899890219],
+      },
+      properties: {
+        'marker-color': '#4A90E2',
+        'marker-size': 'large',
+        'marker-symbol': 'circle'
+      }
+    }
+  ];
+
+  var mapSimple = L.mapbox.map('map', 'mapbox.light')
+  .setView([33.98413,-118.46216], 12.5);
+  var myLayer = L.mapbox.featureLayer().setGeoJSON(geojson).addTo(mapSimple);
+  mapSimple.scrollWheelZoom.disable();
+  mapSimple.doubleClickZoom.disable();
+  mapSimple.dragging.disable();
+</script>

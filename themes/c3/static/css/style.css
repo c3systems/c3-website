@@ -713,6 +713,7 @@ input[type="submit"]:hover {
   position: absolute;
   top: 100px;
   left: 0;
+  z-index: 1;
 }
 .contact a {
   font-size: 1.5em;
@@ -934,4 +935,20 @@ input[type="submit"]:hover {
   #mc_embed_signup input.email {
     width: 100%;
   }
+}
+
+
+
+
+#map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+:root:root .leaflet-control-attribution,
+:root:root .leaflet-control {
+  display: none;
 }
