@@ -269,7 +269,8 @@ a:hover {
   display: block;
   content: '';
   background: url(/images/bg_grid.svg) no-repeat top center;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   transform: translate(-50%, -67px);
   position: absolute;
   top: 0;
@@ -358,6 +359,11 @@ a:hover {
   }
   .hero .logos {
     max-width: 280px;
+  }
+  .hero-bg:before,
+  .hero-bg:after {
+    width: 0;
+    display: none;
   }
 }
 
