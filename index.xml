@@ -10,5 +10,14 @@
 	<atom:link href="https://c3labs.io/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Whitepaper</title>
+      <link>https://c3labs.io/whitepaper.pdf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://c3labs.io/whitepaper.pdf/</guid>
+      <description> Send us an email to get the whitepaper: hello@C3labs.io   </description>
+    </item>
+    
   </channel>
 </rss>

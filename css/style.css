@@ -119,6 +119,12 @@ html,
 body {
   overflow-x: hidden;
 }
+
+body {
+  height: 100%;
+}
+
+
 /* global font */
 body,
 input {
@@ -440,25 +446,6 @@ input[type="submit"]:hover {
   margin-bottom: 1em;
 }
 
-.whitepaper {
-  padding: 6em 2em;
-  background: #f4f4f4 url(../images/cubes.png) repeat 0 0;
-}
-.whitepaper .content {
-  font-size: 0.8em;
-  text-align: right;
-}
-.whitepaper h3 {
-  margin-bottom: 1em;
-}
-.whitepaper p {
-  margin-bottom: 1em;
-}
-@media (max-width: 640px) {
-  .whitepaper .content {
-    text-align: left;
-  }
-}
 
 
 
@@ -985,4 +972,28 @@ input[type="submit"]:hover {
 :root:root .leaflet-control-attribution,
 :root:root .leaflet-control {
   display: none;
+}
+
+
+
+main[class*="whitepaper.pdf"] {
+  height: 100%;
+}
+
+.whitepaper {
+  padding: 6em 2em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f4f4 url(../images/cubes.png) repeat 0 0;
+  font-size: 1.2em;
+}
+
+@media (max-width: 640px) {
+  .whitepaper {
+    padding: 2em;
+  }
 }
