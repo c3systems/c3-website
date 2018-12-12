@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:c3systems/c3systems.github.io.git
+	branch = master
