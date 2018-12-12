@@ -15,4 +15,4 @@ build:
 
 .PHONY: deploy
 deploy:
-	@. deploy.sh
+	@. scripts/deploy.sh
