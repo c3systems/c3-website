@@ -28,7 +28,7 @@ For CSS, always use `em` for font-size, padding, and margin
 
 ## Deployment
 
-Update gh-pages
+Deploy `public/` submodule to c3systems.github.io
 
 ```bash
 make deploy
