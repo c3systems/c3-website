@@ -1,0 +1,33 @@
+<section class="box faq" id="faq">
+  <div class="inner-container">
+    <div class="content">
+      <div class="title">
+        FAQ
+      </div>
+
+      <div class="items">
+        <dl>
+
+          {{ $items := getJSON "faq.json" }}
+          {{ range $item := $items }}
+            <dt>{{ $item.Q }}</dt>
+            <dd>{{ $item.A }}</dd>
+          {{ end }}
+
+        </dl>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  var dts = document.querySelectorAll('.faq dt')
+  for (var i = 0; i < dts.length; i++) {
+    var dt = dts[i]
+    dt.addEventListener('click', function(event) {
+      event.preventDefault()
+      event.target.classList.toggle('close')
+    })
+  }
+</script>

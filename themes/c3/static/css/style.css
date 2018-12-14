@@ -1,3 +1,20 @@
+/*
+
+
+
+Style guide:
+
+Always use `em` for font-size, padding, and margin
+
+
+
+
+*/
+
+
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -111,6 +128,12 @@
 html {
   height: 100%;
 }
+
+
+
+
+
+
 body {
   background: white;
   color: #222;
@@ -119,11 +142,16 @@ html,
 body {
   overflow-x: hidden;
 }
+
+
+
+
+
 /* global font */
 body,
 input {
   font-family: "Myriad Pro", "Myriad", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 14px; /* only place where px should be used */
 }
 strong {
   font-weight: bold;
@@ -139,6 +167,11 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
+
+
+
 
 .container {
   display: flex;
@@ -162,6 +195,12 @@ a:hover {
   width: 100%;
   position: relative;
 }
+
+
+
+
+
+
 
 .header {
   max-width: 800px;
@@ -244,6 +283,11 @@ a:hover {
     min-width: auto;
   }
 }
+
+
+
+
+
 
 .hero {
   width: 100%;
@@ -371,6 +415,11 @@ a:hover {
 
 
 
+
+
+
+
+
 .boxes {
   width: 100%;
 }
@@ -386,9 +435,17 @@ a:hover {
 .box .content {
   width: 100%;
 }
+
+
+
+
 h3 {
   line-height: 1.4;
 }
+
+
+
+
 
 .button,
 input[type="submit"] {
@@ -414,6 +471,9 @@ input[type="submit"]:hover {
 }
 
 
+
+
+
 .oneliner {
   background: #f7f7f7;
   animation-duration: 1s;
@@ -423,6 +483,11 @@ input[type="submit"]:hover {
 .oneliner .content {
   text-align: center;
 }
+
+
+
+
+
 
 
 .intro {
@@ -439,6 +504,13 @@ input[type="submit"]:hover {
   max-width: 600px;
   margin-bottom: 1em;
 }
+
+
+
+
+
+
+
 
 .whitepaper {
   padding: 6em 2em;
@@ -459,6 +531,11 @@ input[type="submit"]:hover {
     text-align: left;
   }
 }
+
+
+
+
+
 
 
 
@@ -535,6 +612,13 @@ input[type="submit"]:hover {
     margin: 0 auto 3em auto;
   }
 }
+
+
+
+
+
+
+
 
 
 .team {
@@ -667,12 +751,19 @@ input[type="submit"]:hover {
 
 
 
+
 @media (max-width: 640px) {
   .box {
     padding-right: 1em;
     padding-left: 1em;
   }
 }
+
+
+
+
+
+
 
 
 
@@ -742,6 +833,12 @@ input[type="submit"]:hover {
   }
 }
 
+
+
+
+
+
+
 .contact {
   height: 480px;
   background: url(/images/map.svg) no-repeat top center;
@@ -778,6 +875,10 @@ input[type="submit"]:hover {
     bottom: 10px;
   }
 }
+
+
+
+
 
 
 
@@ -858,10 +959,26 @@ input[type="submit"]:hover {
   }
 }
 
+
+
+
+
+
+
 .text-center {
   text-align: center;
   justify-content: center;
 }
+
+
+
+
+
+
+
+
+
+
 
 .signup {
   background: #37a3f9;
@@ -915,6 +1032,17 @@ input[type="submit"]:hover {
     background-size: cover;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
 
 :root:root #mc_embed_signup p {
   margin-bottom: 0.2em;
@@ -974,6 +1102,12 @@ input[type="submit"]:hover {
 
 
 
+
+
+
+
+
+
 #map {
   width: 100%;
   height: 100%;
@@ -985,4 +1119,74 @@ input[type="submit"]:hover {
 :root:root .leaflet-control-attribution,
 :root:root .leaflet-control {
   display: none;
+}
+
+
+
+
+
+
+
+
+.faq {
+  padding: 3em 2em 4em 2em;
+  background: #ffffff;
+  color: #222222;
+}
+
+.faq .title {
+  margin-bottom: 0.5em;
+  text-align: center;
+  font-size: 2.2em;
+  color: #37a3f9;
+  font-weight: bold;
+}
+
+.faq dl {
+
+}
+
+.faq dl dt {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 1.4em;
+  color: #222;
+  position: relative;
+  background: #ebf6ff;
+  padding: 0.2em 0.2em 0.2em 1.1em;
+}
+
+.faq dl dt:hover {
+  cursor: pointer;
+}
+
+.faq dl dt:not(.close) {
+
+}
+
+.faq dl dt:after {
+  display: block;
+  content: '▼';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 0.1em;
+  top: 50%;
+  margin-top: -0.6em;
+  cursor: pointer;
+  color: #bdcfde;
+}
+
+.faq dl dt.close:after {
+  content: '▲';
+}
+
+.faq dl dt.close + dd {
+  display: none;
+}
+
+.faq dl dd {
+  display: block;
+  margin-bottom: 1.2em;
+  font-size: 1.2em;
 }
