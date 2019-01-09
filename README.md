@@ -1,10 +1,10 @@
-# C3 Labs
+# OpenNetSys
 
-> The C3 Labs website
+> The OpenNetSys website
 
 ## Live
 
-[https://c3labs.io](https://c3labs.io)
+[https://opennetsys.com](https://opennetsys.com)
 
 ## Development
 
@@ -20,15 +20,15 @@ Run server (content updates on save)
 make serve
 ```
 
-Content is located under `themes/c3/layouts/partials`
+Content is located under `themes/opennetsys/layouts/partials`
 
-CSS is located under `themes/c3/static/css`
+CSS is located under `themes/opennetsys/static/css`
 
 For CSS, always use `em` for font-size, padding, and margin
 
 ## Deployment
 
-Deploy `public/` submodule to c3systems.github.io
+Deploy `public/` submodule to opennetsys.github.io
 
 ```bash
 make deploy
@@ -36,4 +36,4 @@ make deploy
 
 ## License
 
-Images and content are copyright C3 Labs. Everything else is MIT licensed.
+Images and content are copyright OpenNetSys. Everything else is MIT licensed.
