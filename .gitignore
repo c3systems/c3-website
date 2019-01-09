@@ -3,3 +3,12 @@ public/
 
 # important
 deploy_remote.sh
+
+# macOS
+.DS_Store
+
+# vim
+.swp
+*~
+*.swp
+*.swo
