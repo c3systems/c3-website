@@ -137,6 +137,8 @@ html {
 body {
   background: white;
   color: #222;
+  padding: 0;
+  margin: 0;
 }
 html,
 body {
@@ -511,11 +513,34 @@ input[type="submit"]:hover {
 
 
 
-
-.whitepaper {
+body[class="whitepaper.pdf"] {
+  height: 100%;
   padding: 6em 2em;
   background: #f4f4f4 url(../images/cubes.png) repeat 0 0;
 }
+body[class="whitepaper.pdf"] .container {
+  height: 100%;
+}
+.whitepaper-landing {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.whitepaper-landing .center {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.whitepaper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .whitepaper .content {
   font-size: 0.8em;
   text-align: right;
@@ -1190,3 +1215,4 @@ input[type="submit"]:hover {
   margin-bottom: 1.2em;
   font-size: 1.2em;
 }
+

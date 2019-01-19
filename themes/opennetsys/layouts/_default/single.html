@@ -1,22 +1,26 @@
 {{ partial "header.html" . }}
-	<main>
-		<article>
-			<h1>{{ .Title }}</h1>
-			<time>{{ .Date.Format "02.01.2006 15:04" }}</time>
-			<div>
-				{{ .Content }}
-			</div>
-			<div>
-				<ul id="tags">
-					{{ range .Params.tags }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
-					{{ end }}
-				</ul>
-			</div>
-			<div>
-				{{ template "_internal/disqus.html" . }}
-			</div>
-		</article>
-	</main>
-{{ partial "sidebar.html" . }}
-{{ partial "footer.html" . }}
+{{ if eq .File.BaseFileName "whitepaper.pdf" }}
+ {{ partial "whitepaper.html" }}
+{{ else }}
+    <main>
+      <article>
+        <h1>{{ .Title }}</h1>
+        <time>{{ .Date.Format "02.01.2006 15:04" }}</time>
+        <div>
+          {{ .Content }}
+        </div>
+        <div>
+          <ul id="tags">
+            {{ range .Params.tags }}
+            <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a> </li>
+            {{ end }}
+          </ul>
+        </div>
+        <div>
+          {{ template "_internal/disqus.html" . }}
+        </div>
+      </article>
+    </main>
+  {{ partial "sidebar.html" . }}
+  {{ partial "footer.html" . }}
+{{ end }}
