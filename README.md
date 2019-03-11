@@ -31,6 +31,8 @@ For CSS, always use `em` for font-size, padding, and margin
 Deploy `public/` submodule to opennetsys.github.io
 
 ```bash
+make clean/public
+make submodule
 make deploy
 ```
 

@@ -17,6 +17,10 @@ build:
 deploy:
 	@./deploy.sh
 
+.PHONY: clean/public
+clean/public:
+	rm -rf public/
+
 .PHONY: submodule
 submodule:
 	git submodule add -f git@github.com:opennetsys/opennetsys.github.io.git public
